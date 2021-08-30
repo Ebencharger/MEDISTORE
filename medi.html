@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="./Medi.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>MEDISTORE</title>
+</head>
+
+<body>
+    <main class="container-fluid">
+    <main class="row">
+    <main class="col-sm" style="padding: 0px;">
+<nav class="header bg-primary p-4 navbar-expand-lg">
+       <div style="font-size: 40px; font-family: Arial, Helvetica, sans-serif;">
+        MEDISTORE
+       </div>
+       <button class="navbar-toggler" data-toggle="collapse" data-target="#date"><i class="fa fa-bars"></i></button>
+       <div class="nav collapse navbar-collapse" id="date">
+        <button>Drugs</button>
+        <button>Consumable Items</button>
+        <button>Other Items</button>
+       </div>
+    </nav>
+    <div style="margin-left: 10%; margin-top: 50px; padding-bottom: 40px;" id="alltable" class="allt">
+        <div class="form-group" id="form">
+            <input type="text" placeholder="NAME:" class="form-control-lg w-25" id="name">
+            <input type="text" placeholder="QUANTITY:" class="form-control-lg w-25" id="qt">
+            <button class="btn btn-primary" style="margin-top: -10px;" id="add" ondblclick="add()">ADD</button>
+        </div>
+
+        <table id="table">
+            <th>S/N
+            </th>
+            <th>Name
+            </th>
+            <th>Email
+            </th>
+            <th>Action</th>
+            <tr id="ele">
+
+            </tr>
+        </table>
+        <button class="btn btn-primary btn1" id="plus">+</button>
+        <div class="amount">Amount:<p id="sum"></p></div>
+        <div id="costname"></div>
+        <button id="gen" onclick="receipt()">Generate Receipt</button>
+    </div>
+</main>
+</main>
+</main>
+    <script src="./Medi.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
